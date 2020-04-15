@@ -1,0 +1,7 @@
+import time
+
+def timeout(n):
+    start = time.time()
+    time.sleep(n)
+    end = time.time()
+    return { "start" : start, "end" : end, "diff" : int(end - start) }
